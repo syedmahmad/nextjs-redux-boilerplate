@@ -1,0 +1,349 @@
+@import '../variables';
+
+.background-harvest-form {
+  // background-image: url("https://d2m6u6shu0evoe.cloudfront.net/images/backgrounds/foggyMountain.jpg");
+  // background-size: cover;
+  // background-position: center center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.harvest-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: $gray-highlight;
+
+}
+
+.harvest-form {
+  padding: 10px 2px 10px 1px;
+  height: auto;
+  z-index: 3;
+  min-height: 100vh;
+  max-width: 1400px;
+  background-color: white;
+  box-shadow: $panel-shadow-01;
+  .heading-container {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    background-color: $charcoal;
+    margin-bottom: 10px;
+    .heading {
+      font-family: 'teko', impact;
+      font-weight: 300;
+      color: white;
+      height: 46px;
+      font-size: 40px;
+      letter-spacing: 3px;
+      padding: 0px 3px 10px 7px;
+    }
+  }
+
+  .section {
+    background-color: $charcoal-map-panel;
+    display: block;
+    min-height: 110px;
+    margin: 10px 0 10px 0;
+    #new-harvest-map-container {
+      height: 260px;
+      position: relative;
+      #new-harvest-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+      }
+      #custom-map-controls-container {
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+        display: block;
+        background-color: rgba(23, 25, 26, 0.84);
+        border: 1px solid #31393d;
+        border-radius: 5px;
+        #custom-map-controls {
+          height: 170px;
+          width: 50px;
+          #toggle-satellite {
+            height: 60px;
+            width: 100%;
+            display: block;
+            color: white;
+            border-top: 1px solid #31393d;
+            cursor: pointer;
+            svg {
+              width: 36px;
+              height: 36px;
+              margin: 7px 7px 0 7px;
+            }
+          }
+          label {
+            position: absolute;
+            bottom: 2px;
+            font-size: 10px;
+            font-family: 'open sans';
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            color: #8c8c8c;
+          }
+          .active {
+            svg {
+              fill: rgba(255, 255, 255, 0.9);
+            }
+          }
+          .inactive {
+            svg {
+              fill: #8c8c8c;
+            }
+          }
+          #zoom-in, #zoom-out {
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            line-height: 56px;
+            i {
+              font-size: 16px;
+              color: #8c8c8c;
+            }
+            &:hover {
+              i {
+                color: white;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .modified-margin {
+      margin-left: -10px;
+    }
+  }
+
+  #privacy-section {
+    padding: 20px;
+    #privacy-header {
+      text-align: center;
+      color: white;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    #harvest-privacy-button {
+      cursor: pointer;
+      margin: 0 auto;
+      text-align: center;
+      width: 150px;
+      line-height: 30px;
+      height: 30px;
+      display: block;
+      color: white;
+      background-color: $link-blue;
+      border-radius: 5px;
+      &:hover {
+        background-color: $link-blue-highlight;
+      }
+    }
+  }
+}
+
+  /* Form Fields */
+  .judes-addition {
+    background-color: $transparent-gray;
+    border: 1px solid $gray;
+    color: white;
+  }
+
+  textarea:focus, input:focus, input[type="text"]:focus, .uneditable-input:focus, #optional-details:focus {
+    border: 1px solid $gray;
+    box-shadow: 0 0 5px $gray;
+    outline: 1px solid $gray;
+    border-radius: 5px;
+    outline: none;
+  }
+
+
+  input#harvest_image {
+    height: 50px;
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    input {
+    }
+  }
+
+  label {
+    color: white;
+  }
+
+  /* To make columns equal height */
+  .defined-height {
+    height: 364px;
+    overflow: hidden;
+  }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+
+      button {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: white;
+        width: 300px;
+        border: none;
+        outline: none;
+        background-color: $link-blue;
+        box-shadow: inset 0 0 30px 5px $transparent-gray;
+        height: 36px;
+        border-radius: 3px;
+        border: 1px solid red;
+        &:hover {
+          background-color: $link-blue-highlight;
+        }
+      }
+    }
+
+    .image-select-button {
+      height: 60px;
+    width: 180px;
+    color: white;
+    background-color: $transparent-gray;
+    margin: 0 auto;
+    }
+
+      h2 {
+      color: $link-blue-highlight;
+      font-family: tahoma;
+      display: inline;
+      font-size: 12px;
+      vertical-align: bottom;
+      padding: 0 0 0 4px;
+    }
+
+    .selectables {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 22px;
+      img {
+      width: 70px;
+      height: 70px;
+      }
+    }
+
+    #lat-long-fields {
+      text-align: right;
+      padding: 0;
+      margin: 4px 0 0 0;
+      font-family: 'Share Tech', Tahoma, sans-serif;
+      #latitude {
+        text-align: right;
+        color: $link-blue-highlight;
+        background-color: rgba(0,0,0,0.2);
+        border: 1px solid $gray;
+        border-radius: 3px;
+        margin: 0;
+      }
+
+      #longitude{
+        text-align: right;
+        color: $link-blue-highlight;
+        background-color: rgba(0,0,0,0.2);
+        border: 1px solid $gray;
+        border-radius: 3px;
+        margin: 0;
+      }
+    }
+
+/* Stylized high tech label */
+
+  .tech-label {
+    width: 160px;
+    height: 24px;
+    background: rgba(0,0,0,0.45);
+    margin: 2px 0 10px 27px;
+    position: relative;
+    // text-shadow: 0 0 15px $orange-shadow;
+    box-shadow: inset 0 0 5px rgba(70, 70, 70, 0.35);
+    h2 {
+      font-family: 'Share Tech', Tahoma, sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+    }
+    &:before {
+      content: '';
+      line-height: 0;
+      font-size: 0;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid rgba(0,0,0,0.45);
+      border-left: 12px solid transparent;
+      border-right: 12px solid rgba(0,0,0,0.45);
+      position: absolute;
+      top: 0;
+      left: -25px;
+    }
+
+    &:after {
+      content: '';
+      line-height: 0;
+      font-size: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 12px solid transparent;
+      border-top: 12px solid rgba(0,0,0,0.45);
+      border-left: 12px solid rgba(0,0,0,0.45);
+      border-right: 12px solid transparent;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+  .tech-label-small {
+    width: 116px;
+  }
+
+.harvest-form {
+  label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+    width: auto;
+  }
+  label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    // background: transparent;
+    // background: -webkit-radial-gradient($green-transparent, transparent 70%); /* For Safari 5.1 to 6.0 */
+    // background: -o-radial-gradient($green-transparent, transparent 70%); /* For Opera 11.1 to 12.0 */
+    // background: -moz-radial-gradient($green-transparent, transparent 70%); /* For Firefox 3.6 to 15 */
+    // background: radial-gradient($green-transparent, transparent 70%); /* Standard syntax */
+  }
+  label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:3px solid $link-blue-highlight;
+    border-radius: 60px;
+    // box-shadow: 0 0 10px 2px $orange-shadow, inset 0 0 10px 2px $orange-shadow;
+  }
+}

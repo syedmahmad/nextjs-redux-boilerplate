@@ -1,0 +1,30 @@
+@import '../variables';
+
+#flash-messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .flash-items {
+    margin: 0;
+    // padding: 10px;
+    position: relative;
+    border-radius: 3px;
+    background-color: $white-half-transparent;
+
+    .item {
+      padding: 10px;
+      color: red;
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $gray-highlight;
+      &:last-child {
+        border: none;
+      }
+    }
+
+  }
+}

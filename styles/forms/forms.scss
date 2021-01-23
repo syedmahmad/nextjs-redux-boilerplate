@@ -1,0 +1,22 @@
+@import '../variables';
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+.default-form-container {
+  min-height: 100vh;
+  padding: 20px;
+  display: block;
+  .default-form {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    label {
+      color: white;
+      margin-top: 10px;
+    }
+  }
+}

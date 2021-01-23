@@ -1,0 +1,27 @@
+// Including Fonts Starts
+@font-face {
+    font-family: 'open-sans';
+    src: url('/fonts/open-sans/OpenSans-Bold.ttf');
+		src: url('/fonts/open-sans/OpenSans-BoldItalic.ttf'), url('/fonts/open-sans/OpenSans-ExtraBold.ttf'), url('/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf'), url('/fonts/open-sans/OpenSans-Italic.ttf')
+		, url('/fonts/open-sans/OpenSans-Light.ttf'), url('/fonts/open-sans/OpenSans-LightItalic.ttf'), url('/fonts/open-sans/OpenSans-Regular.ttf'), url('/fonts/open-sans/OpenSans-SemiBold.ttf'), url('/fonts/open-sans/OpenSans-SemiBoldItalic.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+// Including Fonts Ends
+
+@import "./index.scss";
+
+// assets/stylesheet/bootstrap
+@import "./bootstrap/bootstrap.scss";
+// assets/stylesheet/bootstrap
+
+// assets/stylesheet/forms
+@import "./forms/account_detail.scss";
+@import "./forms/auth_forms.scss";
+@import "./forms/errors.scss";
+@import "./forms/forms.scss";
+@import "./forms/harvest_form.scss";
+@import "./forms/outfitter_account_details.scss";
+// assets/stylesheet/forms
+
+// You can include all the scss files here as many as you can.
