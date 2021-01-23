@@ -1,0 +1,27 @@
+@import '../variables';
+
+.edit_account_detail {
+
+  textarea {
+    width: 100%;
+    height: 140px;
+    background-color: $off-white-transparent;
+    color: $gray-dark;
+    font-family: 'Open Sans', sans-serif;
+    &:focus {
+      border: 1px solid $gray;
+      box-shadow: 0 0 5px $gray;
+      background-color: $snow-transparent;
+    }
+  }
+  #lat-long-fields {
+    input {
+      background-color: transparent;
+      display: inline-block;
+      height: 25px;
+      width: 100px;
+      border: 1px solid rgb(100, 100, 100);
+    }
+  }
+
+}

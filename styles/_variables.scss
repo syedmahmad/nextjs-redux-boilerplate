@@ -1,0 +1,108 @@
+// variables
+$gray: rgb(192,192,192);
+$green: #384947;
+$green-light: rgb(111, 123, 122);
+$green-transparent: rgba(56, 73, 71, 0.7);
+$green-transparent-2: rgba(56, 73, 71, 0.5);
+$red-highlight: #bc4b3a;
+$red: #B6230C;
+$dark-green: rgb(41, 53, 52);
+$footer-green: rgb(30, 40, 39);
+
+$notice-green: rgb(0, 135, 124);
+
+$facebook-blue: rgb(24, 119, 242);
+$blood-red: rgb(151, 46, 45);
+
+$ivory: rgb(248, 248, 248);
+
+$off-white: rgb(250, 250, 250);
+$snow-transparent: rgba(250, 250, 250, 0.8);
+$off-white-transparent: rgba(250, 250, 250, 0.7);
+$white-half-transparent: rgba(250, 250, 250, 0.5);
+$gray-242: rgb(242, 242, 242);
+$gray-highlight: rgb(240, 240, 240);
+$gray-light: rgb(220, 220, 220);
+$gray-medium-light: rgb(234, 234, 234);
+$logger-gray: rgb(210, 210, 210);
+$panel-gray: rgb(180, 180, 180);
+$gray: rgb(150, 150, 150);
+$gray-dark: rgb(100, 100, 100);
+$gray-75: rgb(75, 75, 75);
+$gray-50: rgb(50, 50, 50);
+$gray-40: rgb(40, 40, 40);
+$charcoal: rgb(40, 40, 40);
+$default-dark: #1d1d1d;
+$charcoal-map-panel: rgba(23, 25, 26, 0.84);
+$charcoal-transparent: rgba(40, 40, 40, 0.9);
+$gray-30: rgb(30, 30, 30);
+$gray-20: rgb(20, 20, 20);
+$text-gray: rgb(75, 75, 75);
+$cloudy: rgb(230, 229, 228);
+$button-white: rgb(240, 240, 240);
+
+$inspector-border: rgba(49, 57, 61, 1);
+$inspector-data-gray: rgb(140, 140, 140);
+
+$on-white-border: 1px solid rgb(240, 240, 240);
+$on-black-border: 1px solid rgb(49, 57, 61);
+
+$orange-tint: #ffa929;
+$orange: rgb(255, 154, 0);
+$orange-shade: #cc7a00;
+$orange-shadow: rgba(255, 154, 0, 0.3);
+$tech-green: #65e52c;
+$tech-green-shadow: rgba(93, 159, 65, .8);
+
+$gray-green-glow: #90a09e;
+$gray-green-highlight: #717f7d;
+$gray-green-highlight-transparent: rgba(113, 127, 125, 0.5);
+$gray-green: #626e6c;
+$gray-green-shadow: #596462;
+$gray-green-dark-shadow: #485150;
+
+// BLUE
+
+$blue-tint: #29A4FF;
+$blue-shadow: #0067B2;
+
+$link-blue-highlight: rgb(74, 151, 186);
+$link-blue: rgba(48, 97, 119, 1);
+$link-blue-transparent: rgba(48, 97, 119, 0.2);
+$link-dark-blue: rgba(0, 70, 110, 0.7);
+$water-blue: rgba(0, 53, 83, 0.8);
+$water-blue-transparent: rgba(0, 53, 83, 0.9);
+$water-blue-transparent-pale: rgba(0, 53, 83, 0.5);
+
+$angled-shadow: rgba(15, 18, 18, 0.25);
+$shade: rgba(15, 18, 18, 0.15);
+
+$frost: rgba(220, 220, 220, 0.7);
+$semi-transparent-gray: rgba(140, 140, 140, 0.8);
+$semi-transparent-green: rgba(56, 73, 71, 0.8);
+$transparent-green: rgba(56,73,71,0.5);
+$handle-gray: rgba(210, 210, 210, .95);
+$fogged-glass: rgba(80, 80, 80, 0.4);
+$deep-ivory: rgba(155, 155, 155, 0.5);
+$side-panel: rgb(240, 240, 240);
+$contact-gray: rgba(0, 0, 0, 0.25);
+$transparent-gray: rgba(0,0,0,0.2);
+$transparent-black: rgba(0, 0, 0, 0.8);
+
+$dark-green-transparent: rgba(56, 73, 71, 0.7);
+$dark-gray-transparent: rgba(40, 40, 40, 0.95);
+$shadow: rgba(35, 35, 35, 0.9);
+$dark-shadow: rgba(20, 20, 20, 0.9);
+
+$state-danger-text: red;
+$error: rgba(255, 51, 0, .5);
+$red: rgba(255, 51, 0, .5);
+
+$box-shadow-01: 0 2px 7px 1px rgba(30, 30, 30, 0.1);
+
+$panel-shadow-01: 0 0 4px rgba(0, 0, 0, 0.1);
+
+@mixin antialiased-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

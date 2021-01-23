@@ -1,0 +1,283 @@
+@import '../variables';
+
+.auth-form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  min-height: 100vh;
+  z-index: 3;
+  background-color: $ivory;
+  padding: 30px 0;
+
+  #user-type-readout {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 50);
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.outfitter-signup-form {
+  height: 1200px;
+  .auth-form {
+    background-color: $green-transparent-2;
+  }
+}
+.facebook-login-btn,
+#facebook-login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 40px;
+  color: white;
+  // margin-bottom: 10px;
+  background-color: $facebook-blue;
+  border-radius: 6px;
+  // added these properties...
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  #centered {
+    display: block;
+    margin: 0 auto;
+  }
+  .fa-facebook {
+    font-size: 18px;
+    color: #fff;
+    padding-right: 8px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+#apple-login {
+  margin-bottom: 20px;
+  position: relative;
+  // a {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  // }
+  // .signin-button {
+  //     width: 100%;
+  //     height: 40px;
+  //     div {
+  //       max-width: none !important;
+  //     }
+  // }
+  #appleid-signin {
+    overflow: hidden;
+    &:first-child {
+      height: 40px;
+    }
+    div {
+      max-width: none !important;
+    }
+  }
+}
+
+
+.auth-form {
+  width: 33%;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 5px;
+  height: auto;
+  z-index: 3;
+  @media(max-width: 430px) {
+    width: 100%;
+    min-width: 300px;
+  }
+
+    #facebook {
+      height: 200px;
+    }
+
+    #option-or {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      div#or {
+        color: rgb(120, 120, 120);
+        flex: 0 0 30px;
+        font-size: 14px;
+        text-align: center;
+      }
+      hr {
+        flex: 1 1 auto;
+        border-color: #eee;
+      }
+    }
+
+  section {
+    padding: 20px 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: $gray;
+    margin: 10px 0;
+    box-shadow: $box-shadow-01;
+    #privacy-policy {
+      display: block;
+      width: 100%;
+      color: rgb(170, 170, 170);
+      font-size: 9px;
+      text-align: center;
+      height: 20px;
+      a {
+        color: $link-blue-highlight;
+      }
+    }
+  }
+
+  h2, h3, p, label, em {
+    color: $gray-75;
+    font-family: 'Open Sans';
+    font-weight: normal;
+  }
+
+  i {
+    color: $gray;
+    font-size: 12px;
+  }
+  .heading-container {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    background-color: $charcoal;
+    margin-bottom: 10px;
+
+    .heading {
+      font-family: 'teko', impact;
+      font-weight: 300;
+      color: white;
+      height: 46px;
+      font-size: 40px;
+      letter-spacing: 3px;
+      padding: 0px 3px 10px 7px;
+    }
+  }
+
+  .field {
+    width: 100%;
+
+    label {
+      width: 100%;
+      font-weight: normal;
+    }
+
+    input {
+      width: 100%;
+      height: 36px;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      background-color: $gray-242;
+      text-indent: 10px;
+      color: $gray-dark;
+      font-family: 'Open Sans', sans-serif;
+      &:focus {
+        border: 1px solid $gray;
+        box-shadow: 0 0 5px $gray;
+        background-color: $snow-transparent;
+      }
+
+    }
+
+    input[type="checkbox"] .checkbox {
+      display: inline;
+      outline: none;
+      border: none;
+      margin: 0;
+      float: left;
+    }
+
+    input[type="checkbox"]:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      color: blue;
+    }
+
+  }
+
+  .actions {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+    input {
+      display: block;
+      font-size: 16px;
+      width: 200px;
+      min-width: 170px;
+      font-weight: 500;
+      outline: none;
+      color: $link-blue-highlight;
+      border: 1px solid $link-blue-highlight;
+      background-color: transparent;
+      height: 40px;
+      border-radius: 20px;
+      margin: 0 auto;
+      &:hover {
+        background-color: $link-blue-highlight;
+        color: white;
+      }
+    }
+
+  }
+
+  .links {
+    text-align: center;
+    line-height: 20px;
+    a {
+      color: rgb(100, 100, 100);
+    }
+  }
+
+}
+
+.square-select {
+  input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+    width: auto;
+  }
+  label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 15px;
+    background-color: rgb(180, 180, 180);
+    margin: 0 5px;
+  }
+  label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    background-color: $link-blue-highlight;
+    // box-shadow: 0 0 5px 1px $blue-tint, inset 0 0 5px 1px $blue-shadow;
+  }
+}
+
+.auth-form {
+  .actions {
+    position: relative;
+    .loading-state {
+      position: absolute;
+      right: 35%;
+      
+    }
+  }
+}

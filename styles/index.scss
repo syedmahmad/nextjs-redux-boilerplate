@@ -1,0 +1,40 @@
+.student-rs {
+    padding: 40px 0;
+    .container {
+        max-width: 760px;
+    }
+    
+    h2 {
+        font-weight: 600;
+        color: #2F5266;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
+    .row {
+        .col-50 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            a {
+                // color: #E1BF42;
+                color: #2F5266;
+                font-weight: 500;
+                display: block;
+                padding: 4px 0;
+                text-decoration: underline;
+                &:hover {
+                    color: #E1BF42;
+                }
+            }
+            @media (max-width: 768px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+                .text-right {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
